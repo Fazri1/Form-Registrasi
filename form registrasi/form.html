@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registrasi</title>
+    <style>
+        p {
+            margin: 5px;
+        }
+        .tanggal {
+            padding-right: 50px;
+        }
+
+        .nama {
+            margin-left: 5px;
+        }
+        .tempat {
+            margin-left: 16.7px;
+        }
+        .lahir {
+            margin-left: 13.5px;
+        }
+        .jenis {
+            margin-left: 7px;
+        }
+        .alamat {
+            margin-left: 56px;
+        }
+        .provinsi {
+            margin-left: 50px;
+        }
+        .kota {
+            margin-left: 72px;
+        }
+        .telp {
+            margin-left: 48px;
+        }
+        .email {
+            margin-left: 65px;
+        }
+        .agama {
+            margin-left: 57px;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <h1 align="center">Registrasi Siswa</h1>
+        <p align="right" class="tanggal">
+            <label>Tanggal:</label>
+            <input type="text" name="tanggal" placeholder="Hari/Tanggal">
+            
+        </p>
+        <fieldset>
+            <legend>Informasi Pribadi</legend>
+            <p>
+                <label>Nama Lengkap: </label>
+                <input type="text" name="nama" placeholder="Nama Lengkap..." class="nama">
+            </p>
+            <p>
+                <label>Tempat Lahir: </label>
+                <input type="text" name="tempat" placeholder="Tempat Lahir..." class="tempat">
+            </p>
+            <p>
+                <label>Tanggal Lahir: </label>
+                <input type="date" class="lahir">
+            </p>
+            <p>
+                <label>Jenis Kelamin: </label>
+                <label class="jenis"><input type="radio" name="jeniskelamin" value="Laki-laki">Laki-laki</label>
+                <label class="jenis"><input type="radio" name="jeniskelamin" value="Perempuan">Perempuan</label>
+            </p>
+            <p>
+                <label>Agama: </label>
+                <select name="agama" class="agama">
+                    <option value="islam">Islam</option>
+                    <option value="kristen">Kristen</option>
+                    <option value="budha">Budha</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="other">Other</option>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Informasi Kontak</legend>
+            <p>
+                <label>Alamat: </label>
+                <textarea name="alamat" cols="30" rows="5" placeholder="Jl..." class="alamat"></textarea>
+            </p>
+            <p>
+                <label>Provinsi: </label>
+                <input type="text" name="provinsi" placeholder="Provinsi..." class="provinsi">
+            </p>
+            <p>
+                <label>Kota:</label>
+                <input type="text" name="kota" placeholder="Kota..." class="kota">
+            </p>
+            <p>
+                <label>No. Telp: </label>
+                <input type="text" name="telp" placeholder="08xx..." class="telp">
+            </p>
+            <p>
+                <label>Email: </label>
+                <input type="email" name="email" placeholder="email@contoh.com" class="email">
+            </p>
+        </fieldset>
+            <p>
+                <input type="submit" name="submit" value="daftar">
+            </p>
+    </form>
+</body>
+</html>
